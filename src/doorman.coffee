@@ -19,9 +19,9 @@ module.exports = exports = (options = {}) ->
   options.expire ?= 3600
   options.resetInterval ?= 3600
   options.resetCb ?= ->
-  options.errorMsg ?= 'hash cash failed'
+  options.errorMsg ?= 'doorman failed'
 
-  hashCash = module.exports.instance = new Doorman options
+  doorman = module.exports.instance = new Doorman options
 
 
 class Doorman
