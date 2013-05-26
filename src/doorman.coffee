@@ -1,5 +1,5 @@
 #
-# Hash Cash
+# Doorman
 # Philip Orange, 2013
 #
 
@@ -21,10 +21,10 @@ module.exports = exports = (options = {}) ->
   options.resetCb ?= ->
   options.errorMsg ?= 'hash cash failed'
 
-  hashCash = module.exports.instance = new HashCash options
+  hashCash = module.exports.instance = new Doorman options
 
 
-class HashCash
+class Doorman
   challengeUse = 0
   constructor: (@options) ->
     @resetChallenge()
